@@ -1,0 +1,86 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+
+.big_boy{
+    width: 100%;
+    height: 100%;
+    background: url(download.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+    display: grid;
+}
+.head{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-size: 16vw;
+    color: rgb(0, 255, 55);
+    font-family: 'Modern Antiqua', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.opopop{
+    position: absolute;
+    display: grid;
+    grid-gap: 0vw 0vw;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 50%;
+    height: 20vh;
+    font-size: 3vw;
+    color: rgb(0, 255, 13);
+    font-family:  cursive;
+    justify-self: center;
+    align-self: flex-end;
+    text-align: center;
+}
+.den{
+    border: 0.2vw rgb(0, 255, 13) solid;
+}
+
+@keyframes amdmak{
+    from {background-color: transparent;}
+    to {background-color: rgb(179, 255, 176);}
+}
+
+
+
+.den:hover{
+    animation-name: amdmak;
+    animation-duration: 1s;
+    animation-fill-mode:forwards;
+}
+
+.boring{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-auto-columns: minmax(100%, auto);
+    grid-auto-rows: minmax(40%, auto);
+
+    background-color: rgb(0, 0, 0);
+    color: white;
+    
+}
+.half{
+    width: 40%;
+    height: 100%;
+    margin: auto;
+    background-color: rgb(0, 0, 0);
+    font-size: 2vw;
+    font-family: 'Modern Antiqua', cursive;}
+
+    @media only screen and (max-width: 600px) {
+        .head{
+            display: none;
+        }
+        .opopop{
+            display: none;
+        }
+      }
